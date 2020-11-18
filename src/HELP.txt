@@ -1,0 +1,7 @@
+Api used:
+https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations
+
+https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/{id}
+
+Dependencies:
+react-router-dom (work with routers)
