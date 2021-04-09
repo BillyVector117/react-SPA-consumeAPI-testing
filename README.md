@@ -1,3 +1,13 @@
+#react #SPA #fetch #create-react-app #react-douter-dom
+Single page application - Using React - AoE API
+-> main page
+![javaScript-React](https://github.com/BillyVector117/Example-react-fetch-Router-dom-SPA/blob/main/Screenshot_1.png)
+->second page 
+![javaScript-React](https://github.com/BillyVector117/Example-react-fetch-Router-dom-SPA/blob/main/Screenshot_2.png)
+
+
+Thanks Bluuweb
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
