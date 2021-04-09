@@ -2,24 +2,21 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 const User = () => {
-  // console.log(useParams()); Muestra por consola el params de la url (:id)
+  // console.log(useParams()); Contais Url-Params (:id)
 
-  const { id } = useParams(); // Destructurando el id del params
-  console.log(id); // mostrar ese id
-
+  const { id } = useParams(); // Store id
   const [civilizacion, setCivilizacion] = React.useState([]);
 
-  // Hook de React
   React.useEffect(() => {
-    // Consumiendo una API (fetch) en especifica (la que el user clickee)
+    // Consume specific data from API using :id, with (fetch) 
     const getData = async () => {
       const data = await fetch(
         `https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/${id}`
       );
-      const users = await data.json(); // convertir la data a formato JSON
+      const users = await data.json();
       setCivilizacion(users);
     };
-    getData(); // Mostrar los datos capturados por fetch
+    getData();
   }, [id]);
 
   return (

@@ -1,3 +1,4 @@
+// Dependencies
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -6,6 +7,7 @@ import {
   Link,
   NavLink,
 } from "react-router-dom";
+// Components
 import Contacto from "./components/Contacto";
 import Inicio from "./components/Inicio";
 import Nosotros from "./components/Nosotros";
@@ -14,6 +16,8 @@ import User from "./components/User";
 
 function App() {
   return (
+    /* Define routes wraping all App with <Router> tag, <Link> defines a single route in a button type ('a' HTML tag), and <Switch>
+    allows to define which component will response once enter to Route path */
     <Router>
       <div className="container mt-5">
         <div className="btn-group">
@@ -31,20 +35,20 @@ function App() {
             Contacto
           </NavLink>
         </div>
-        <h1>React Routes Navbar</h1>
-        <hr></hr>
+        <h1>React / Routes / AoE API / fetch</h1>
+        <hr />
         <Switch>
           <Route path="/nosotros/:id">
-            <User></User>
+            <User />
           </Route>
           <Route path="/contacto">
-            <Contacto></Contacto>
+            <Contacto />
           </Route>
           <Route path="/nosotros">
-            <Nosotros></Nosotros>
+            <Nosotros />
           </Route>
           <Route path="/" exact>
-            <Inicio></Inicio>
+            <Inicio />
           </Route>
         </Switch>
       </div>
